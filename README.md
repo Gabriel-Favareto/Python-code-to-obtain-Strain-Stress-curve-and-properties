@@ -42,6 +42,7 @@ To use this project, there are a few things to clarify before using it and havin
 ## Examples-of-output
 
 ![Exemplo_output_codigoTracao](https://github.com/Gabriel-Favareto/Python-code-to-obtain-Strain-Stress-curve-and-properties/assets/156805976/82cc8189-64f9-4c3f-8ac9-9544f5ba6b7d)
+![Exemplo_output_codigoTracao2](https://github.com/Gabriel-Favareto/Python-code-to-obtain-Strain-Stress-curve-and-properties/assets/156805976/e200776d-0309-45da-b364-e465450eee6d)
 
 ## Contribution
 
@@ -61,7 +62,7 @@ Contributions are welcome! Please follow these steps to contribute:
     git push origin my-feature
     ```
 5. Open a Pull Request.
-   
+
 ## License
 
 This project is licensed under the MIT License - see the [License](License) file for more details.
