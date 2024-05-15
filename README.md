@@ -13,7 +13,7 @@ on the universal testing machine, more specifically metallic materials.
 
 ## Introduction
 This project is an application that, firstly, reads the text file obtained from the universal testing machine (example of the text file that 
-the code was based on at the index) extracting the data, using Pandas, and other necessary elements (area and gauge lenght), using RegEx. The output will be the  
+the code was based on at the index) extracting the data, using Pandas, and other necessary elements (area and gauge lenght), using RegEx. The output will be the 
 UTS (Ultimate Tensile Strength), Elongation, Young's modulus, the Yield Stress and the Strain-Stress curve, plotted using Matplotlib.
 
 The Young's modulus is obtained using the 'linregress' function of scipy.stats. Therefore, using the previously calculated Young's modulus, the 
