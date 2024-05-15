@@ -41,7 +41,7 @@ def StrainStressCurve(x_axis,y_axis):
     plt.show()
 
 # Function responsible for giving the basic properties that can be extrated from the Stress-Strain curve
-# LTR, yield stress, Young's modulus, elongation and the Stress-Strain curve
+# UTS, yield stress, Young's modulus, elongation and the Stress-Strain curve
 def runMetalsAnalysis(area,l0,df):
     # Stress and Strain calculations
     df['Stress'] = df['Load(kN)']*1000/area #MPa
