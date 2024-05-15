@@ -20,7 +20,7 @@ Yield Stress is obtained with the conventional yield stress calculation (strain 
 
 ## Use
 
-To use this project, there are a few things to clarify before using the code to have a smooth experience.
+To use this project, there are a few things to clarify before using it and having a smooth experience.
 
 1) The text file that the code was based is the output from the Universal Testing Machine from my University, UTFPR-Londrina, therefore, be
    careful with the format of the text file that will be read by the code. The functions 'getData' and 'readParameters' may be altered depending on
