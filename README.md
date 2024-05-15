@@ -5,7 +5,8 @@ on the universal testing machine, more specifically metallic materials.
 
 ## Index
 - [Introduction](#introduction)
-- [Use](#use)
+- [Usage](#usage)
+- [Examples-of-output](#examples-of-output)
 - [Contribution](#contribution)
 - [License](#license)
 - [Contact](#contact)
@@ -18,7 +19,7 @@ UTS (Ultimate Tensile Strength), Elongation, Young's modulus, the Yield Stress a
 The Young's modulus is obtained using the 'linregress' function of scipy.stats. Therefore, using the previously calculated Young's modulus, the 
 Yield Stress is obtained with the conventional yield stress calculation (strain of 0,2%).
 
-## Use
+## Usage
 
 To use this project, there are a few things to clarify before using it and having a smooth experience.
 
@@ -37,6 +38,10 @@ To use this project, there are a few things to clarify before using it and havin
 5) When running the code, the code will plot the Strain-Stress curve and return the UTS and elongation. After this, a prompt will appear asking
    you to give the upper limit of the elastic region, that can be informed roughly by looking to the plotted curve (answer in MPa). For now it's
    done manually this step. With the upper limit informed, the output will give you the Young's modulus and the Yield Stress.
+
+## Examples-of-output
+
+![Exemplo_output_codigoTracao](https://github.com/Gabriel-Favareto/Python-code-to-obtain-Strain-Stress-curve-and-properties/assets/156805976/82cc8189-64f9-4c3f-8ac9-9544f5ba6b7d)
 
 ## Contribution
 
