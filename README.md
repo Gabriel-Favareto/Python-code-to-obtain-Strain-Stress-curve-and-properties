@@ -13,10 +13,22 @@ on the universal testing machine, specifically metallic materials.
 
 ## Introduction
 This project is an application that reads the text file obtained from the universal testing machine ([example of the text file](ExampleTextFile_1020steel_annealed_700_2h.txt)) extracting the data, using Pandas, and other necessary elements (area and gauge length), using RegEx. The output will be the 
-UTS (Ultimate Tensile Strength), true UTS, total Elongation, elastic and plastic elongation, Young's modulus (or elastic modulus), Yield Stress, the engineering Strain-Stress curve and true Stress-Strain curve (plotted using MatPlotLib), and Toughness 
+UTS (Ultimate Tensile Strength), True UTS, Elongation, elastic and plastic elongation, Young's modulus (or elastic modulus), Yield Stress, the Engineering Strain-Stress curve and True Stress-Strain curve (plotted using MatPlotLib), and Toughness 
 
 The Young's modulus is obtained using the 'linregress' function of scipy.stats. Therefore, using the previously calculated Young's modulus, the 
 Yield Stress is obtained with the conventional yield stress calculation (strain of 0,2%).
+
+To calculate the values for plotting the True Strain-Stress curve and to obtain the True UTS it was used the following formulas:
+
+$$\sigma_t = \sigma_e \times (1 + \epsilon_e)\$$
+
+$$\epsilon_t = \log(1+\epsilon_e)\$$
+
+Where:
+
+$\sigma_e\$ = Engineering Stress, $\sigma_t\$ = True Stress, $\epsilon_e\$ = Engineering Strain, $\epsilon_t\$ = True Strain.
+
+To calculate the toughness of the material, it was used numerical methods for integration to obtain the area under the curve. It was necessary to choose the most appropriate method for the Strain-Stress curve, considering the irregularities that can be present in the graph, which was the Trapezoidal Rule. This method calculates the area of a trapezoid between a point and the previous point, which is better for grasping sudden changes in the curve.
 
 ## Usage
 
@@ -40,8 +52,8 @@ To use this project, there are a few things to clarify before using it and havin
 
 ## Examples-of-output
 
-![Exemplo_output_codigoTracao](https://github.com/Gabriel-Favareto/Python-code-to-obtain-Strain-Stress-curve-and-properties/assets/156805976/82cc8189-64f9-4c3f-8ac9-9544f5ba6b7d)
-![Exemplo_output_codigoTracao2](https://github.com/Gabriel-Favareto/Python-code-to-obtain-Strain-Stress-curve-and-properties/assets/156805976/e200776d-0309-45da-b364-e465450eee6d)
+![Exemplo_output_codigoTracao](ExampleOfOutput_1.png)
+![Exemplo_output_codigoTracao2](ExampleOfOutput_2.png)
 
 ## Contribution
 
