@@ -20,7 +20,7 @@ Yield Stress is obtained with the conventional yield stress calculation (strain 
 
 To calculate the values for plotting the True Strain-Stress curve and to obtain the True UTS it was used the following formulas:
 
-$$\sigma_t = \sigma_e \times (1 + \epsilon_e)\$$
+$$\sigma_t = \sigma_e \cdot (1 + \epsilon_e)\$$
 
 $$\epsilon_t = \log(1+\epsilon_e)\$$
 
